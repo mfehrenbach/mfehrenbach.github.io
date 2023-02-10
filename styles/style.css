@@ -26,3 +26,19 @@ h1 {
     margin-top: 1em;
     padding: 1em;
 }
+
+#tray summary {
+    cursor: pointer;
+}
+
+#tray summary:after {
+    content: ' +';
+}
+
+#tray[open] summary {
+    color: darkgray;
+}
+
+#tray[open] summary:after {
+    content: ' –';
+}
