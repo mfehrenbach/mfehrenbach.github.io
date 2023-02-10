@@ -12,3 +12,8 @@ h1 {
     font-size: 2em;
     font-family: 'Alfa Slab One', serif;
 }
+
+.callout {
+    color: tomato;
+    font-size: 1.5em;
+}
