@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=EB+Garamond:ital@0;1&display=swap');
+
 body {
     color: slategray;
-    font-family: sans-serif;
+    font-family: 'EB Garamond', serif;
+    font-size: 2em;
     padding: 2em;
+}
+
+h1 {
+    color: black;
+    font-size: 2em;
+    font-family: 'Alfa Slab One', serif;
 }
