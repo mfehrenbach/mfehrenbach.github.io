@@ -42,3 +42,7 @@ h1 {
 #tray[open] summary:after {
     content: ' –';
 }
+
+#tray p:last-child {
+    opacity: 0.5;
+}
