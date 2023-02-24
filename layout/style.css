@@ -12,7 +12,15 @@ main {
     row-gap: 10vh;
 }
 
-figure {
+.frame {
+    height: 50vh;
+    background-color: deepskyblue;
+}
 
+figcaption {
+    margin-top: 1em;
+}
 
+figcaption a {
+    color: tomato;
 }
