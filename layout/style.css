@@ -15,6 +15,17 @@ main {
 .frame {
     height: 50vh;
     background-color: deepskyblue;
+    overflow: hidden;
+}
+
+.frame div {
+    height: 200px;
+    width: 300px;
+    background: gold;
+
+    border-radius: 50%;
+    filter: blur(20px);
+    margin-left: -50px;
 }
 
 figcaption {
