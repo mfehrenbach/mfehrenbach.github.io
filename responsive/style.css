@@ -5,6 +5,9 @@
     --blur: 1em;
 
     --left--shift: -20%;
+
+    --background: deepskyblue;
+    --cloud: gold;
 }
 
 body {
@@ -23,13 +26,13 @@ main {
 
 .frame {
     height: calc(5 * var(--spacing));
-    background-color: deepskyblue;
+    background-color: var(--background);
     overflow: hidden;
 }
 
 .frame div {
     aspect-ratio: var(--aspect-ratio);
-    background: gold;
+    background: var(--cloud);
 
     border-radius: 50%;
     filter: blur(var(--blur));
