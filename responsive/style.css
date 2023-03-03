@@ -10,6 +10,27 @@
     --cloud: gold;
 }
 
+
+@media (min-width: 600px) {
+	:root {
+        --background: purple;
+        --cloud: orange;
+
+        --aspect-ratio: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+	:root {
+        --background: red;
+        --cloud: white;
+
+        --aspect-ratio: 1 / 2;
+    }
+}
+
+
+
 body {
     padding: var(--spacing);
 }
