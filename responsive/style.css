@@ -1,31 +1,39 @@
+:root {
+    --spacing: 10vw;
+    --aspect-ratio: 3 / 2;
+
+    --blur: 1em;
+
+    --left--shift: -20%;
+}
+
 body {
-    padding: 10vw;
+    padding: var(--spacing);
 }
 
 header {
-    margin-bottom: 20vh;
+    margin-bottom: calc(2 * var(--spacing));
 }
 
 main {
     display: flex;
     flex-direction: column;
-    row-gap: 10vh;
+    row-gap: var(--spacing);
 }
 
 .frame {
-    height: 50vh;
+    height: calc(5 * var(--spacing));
     background-color: deepskyblue;
     overflow: hidden;
 }
 
 .frame div {
-    height: 200px;
-    width: 300px;
+    aspect-ratio: var(--aspect-ratio);
     background: gold;
 
     border-radius: 50%;
-    filter: blur(20px);
-    margin-left: -50px;
+    filter: blur(var(--blur));
+    margin-left: var(--left--shift);
 }
 
 figcaption {
