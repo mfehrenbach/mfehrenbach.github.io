@@ -1,8 +1,6 @@
 # Project *Index*
 
-This is a demo repo for our [*Index* projects](https://typography-interaction-2526.github.io/project/index/) in [*Typography & Interaction*](https://typography-interaction-2526.github.io/).
-
-Also include links to the *repos* of your projects, too:
+This is a demo repo for our [*Index* projects](https://typography-interaction-2526.github.io/project/index/) in [*Typography & Interaction*](https://typography-interaction-2526.github.io/). Also include links to the *repos* of your projects, too:
 
 - [*Loomings*](https://github.com/mfehrenbach/loomings)
   
