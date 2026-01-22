@@ -1,14 +1,22 @@
 :root {
-	--color: black;
-	--background: #ddd;
+	--color: white;
+	--background: royalblue;
 
 	--body: 1rem;
 	--heading: calc(2 * var(--body));
-	--gutter: calc(3 * var(--body));
+	--gutter: calc(2 * var(--body));
+
+	text-wrap: balance;
+
+	@media (width > 600px) {
+		--gutter: calc(4 * var(--body));
+
+		font-size: 150%;
+	}
 }
 
+
 body {
-	align-items: center;
 	background-color: var(--background);
 	block-size: 100vh;
 	color: var(--color);
@@ -19,20 +27,33 @@ body {
 }
 
 header, footer {
-	background-color: var(--color);
-	color: var(--background);
+	background-color: color-mix(in srgb, var(--color) 20%, transparent);
+	letter-spacing: 0.1em;
 	padding-block: var(--body);
 	padding-inline: var(--gutter);
+	text-transform: uppercase;
 }
 
 h1 { font-size: var(--heading); }
 
 main {
-	padding-block: var(--body);
+	align-self: center;
+	padding-block: var(--heading);
 	padding-inline: var(--gutter);
+	display: grid;
+	gap: var(--heading);
 }
 
 ul {
 	display: grid;
 	gap: var(--body);
+
+	/* Nesting! */
+	a { font-weight: bold; }
+	p { opacity: 50% }
+}
+
+p a {
+	text-decoration: underline;
+	text-underline-offset: 0.3em;
 }
