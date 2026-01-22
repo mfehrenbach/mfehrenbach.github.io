@@ -1,3 +1,27 @@
+@font-face {
+	font-family: 'Klima';
+	src: url('klima-light.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Klima';
+	font-style: italic;
+	src: url('klima-light-italic.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Klima';
+	font-weight: bold;
+	src: url('klima-bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Klima';
+	font-style: italic;
+	font-weight: bold;
+	src: url('klima-bold-italic.woff2') format('woff2');
+}
+
 :root {
 	--color: white;
 	--background: royalblue;
@@ -6,6 +30,7 @@
 	--heading: calc(2 * var(--body));
 	--gutter: calc(2 * var(--body));
 
+	font-family: 'Klima', sans-serif;
 	font-size: 110%;
 	line-height: 133%;
 	text-wrap: balance;
@@ -23,9 +48,10 @@ body {
 	block-size: 100vh;
 	color: var(--color);
 	display: grid;
-	font-family: sans-serif;
 	font-size: var(--body);
 	grid-template-rows: min-content 1fr min-content;
+
+
 
 	/* I wanted to have a graph-paper background pattern, without using an image. */
 	/* I found this tool: https://css-pattern.com/graph-paper/ */
@@ -66,11 +92,12 @@ main {
 	gap: var(--heading);
 }
 
+/* Customized link underlines! */
 a {
 	text-decoration-color: color-mix(in srgb, var(--color), transparent);;
 	text-decoration-line: underline;
 	text-decoration-skip-ink: none;
-	text-decoration-thickness: 0.1em;
+	text-decoration-thickness: 0.07em; /* `em` for font-relative. */
 	text-underline-offset: 0.12em;
 }
 
