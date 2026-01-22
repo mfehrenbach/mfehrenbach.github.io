@@ -6,12 +6,14 @@
 	--heading: calc(2 * var(--body));
 	--gutter: calc(2 * var(--body));
 
+	font-size: 110%;
+	line-height: 133%;
 	text-wrap: balance;
 
 	@media (width > 600px) {
 		--gutter: calc(4 * var(--body));
 
-		font-size: 150%;
+		font-size: 133%;
 	}
 }
 
@@ -44,16 +46,20 @@ main {
 	gap: var(--heading);
 }
 
+a {
+	text-decoration: underline;
+	text-underline-offset: 0.1em;
+}
+
 ul {
 	display: grid;
 	gap: var(--body);
 
 	/* Nesting! */
-	a { font-weight: bold; }
-	p { opacity: 50% }
-}
+	a {
+		font-weight: bold;
+		text-decoration: initial;
+	}
 
-p a {
-	text-decoration: underline;
-	text-underline-offset: 0.3em;
+	p { opacity: 50%; }
 }
