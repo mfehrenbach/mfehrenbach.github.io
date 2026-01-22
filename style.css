@@ -35,7 +35,7 @@ ul {
     gap: var(--gutter);
 }
 
-.reverse {
+header, footer {
     padding-block: var(--vertical);
     color: var(--background);
     background-color: var(--color);
