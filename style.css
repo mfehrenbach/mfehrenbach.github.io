@@ -1,43 +1,38 @@
 :root {
-    --color: black;
-    --background: #ddd;
+	--color: black;
+	--background: #ddd;
 
-    --body-copy: 1rem;
-    --heading-copy: calc(var(--body-copy) * 2);
-
-    --gutter: 2rem;
-    --vertical: 4rem;
+	--body: 1rem;
+	--heading: calc(2 * var(--body));
+	--gutter: calc(3 * var(--body));
 }
 
 body {
-    font-family: sans-serif;
-    color: var(--color);
-    background-color: var(--background);
-    font-size: var(--body-copy);
-    block-size: 100vh;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    align-items: center;
-}
-
-main {
-    padding-inline: var(--gutter);
-    padding-block: var(--vertical);
-}
-
-h1 {
-    font-size: var(--heading-copy);
-}
-
-ul {
-    padding-inline: var(--gutter);
-    display: grid;
-    gap: var(--gutter);
+	align-items: center;
+	background-color: var(--background);
+	block-size: 100vh;
+	color: var(--color);
+	display: grid;
+	font-family: sans-serif;
+	font-size: var(--body);
+	grid-template-rows: min-content 1fr min-content;
 }
 
 header, footer {
-    padding-block: var(--vertical);
-    color: var(--background);
-    background-color: var(--color);
-    padding-inline: var(--gutter);
+	background-color: var(--color);
+	color: var(--background);
+	padding-block: var(--body);
+	padding-inline: var(--gutter);
+}
+
+h1 { font-size: var(--heading); }
+
+main {
+	padding-block: var(--body);
+	padding-inline: var(--gutter);
+}
+
+ul {
+	display: grid;
+	gap: var(--body);
 }
